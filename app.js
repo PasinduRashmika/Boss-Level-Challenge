@@ -37,7 +37,13 @@ app.get("/compose", function(req, res){
 
 app.post("/compose", function(req, res){
   const wrd=req.body.txtOne;
-  console.log(wrd);
+  const txtarea=req.body.postBody;
+
+  const post={
+    title:wrd,
+    content:txtarea
+  }
+  console.log(post);
 });
 
 
