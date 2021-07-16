@@ -30,6 +30,16 @@ app.get("/contact",function(req, res){
   res.render("contact",{contactPara : contactContent})
 });
 
+app.get("/compose", function(req, res){
+  res.render("compose" );
+
+});
+
+app.post("/compose", function(req, res){
+  const wrd=req.body.txtOne;
+  console.log(wrd);
+});
+
 
 
 
